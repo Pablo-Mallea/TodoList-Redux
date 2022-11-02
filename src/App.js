@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Filters } from './components/Filters';
 import NewNote from './components/NewNote';
 import Notes from './components/Notes';
 
@@ -11,6 +12,7 @@ const App = () => {
   return (
     <div className="App">
       <NewNote />
+      <Filters />
       <Notes />
     </div>
   );

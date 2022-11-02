@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { changeImportant } from "../reducers/notereducer";
 const Notes = () => {
-  const notes = useSelector((state) => state);
+  const notes = useSelector((state) => state.notes);
   const dispatch = useDispatch()
 
   const important = (id) => {
